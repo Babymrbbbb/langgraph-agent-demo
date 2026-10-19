@@ -53,11 +53,11 @@ python agent_orchestration.py --real
 
 作者另有一套零依赖自研编排（见 [ai-native-team](https://github.com/Babymrbbbb/ai-native-team)）。本 Demo 是把同一套编排思想用 LangGraph 做的**等价复刻**，用于：
 1. 验证自研逻辑与工业标准框架**架构同构**（节点、条件边、共享状态一一对应）。
-2. 作为面试作品，对照说明「代码态适合深度定制，低代码/框架态适合团队接手」的取舍。
+2. 作为与工业框架的架构同构对照，说明「代码态适合深度定制，框架态适合团队接手」的取舍。
 
 ## 诚实边界
 
-- 本仓库为面试作品与工业框架对照；**架构设计、节点职责、路由与护栏规则由作者确定，代码由 AI 技术搭子实现。**
+- 本仓库为自研编排的工业框架等价实现；**架构设计、节点职责、路由与护栏规则由作者确定，代码由 AI 技术搭子实现。**
 - 默认离线 mock 保证 clone 即跑；`--real` 接作者自建本地模型网关。
 - `retrieve` 节点真实实现可接 Chroma（`Chroma.as_retriever()`），Demo 内用命中规则演示分支逻辑。
 
@@ -68,9 +68,7 @@ langgraph-agent-demo/
 ├── README.md
 ├── agent_orchestration.py   # LangGraph 状态机（本 Demo 全部逻辑）
 ├── requirements.txt
-├── LICENSE
-└── docs/
-    └── interview-talk.md    # 面试怎么讲这件作品（话术）
+└── LICENSE
 ```
 
 ## License
