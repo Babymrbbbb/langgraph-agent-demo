@@ -71,6 +71,14 @@ langgraph-agent-demo/
 └── LICENSE
 ```
 
+## 体系定位
+
+本仓库是 [ai-native-team](https://github.com/Babymrbbbb/ai-native-team)「AI 原生组织 OS」体系的**编排对照层**组件——把 ai-native-team 的「按部就班不偏离」编排思想，用 LangGraph 工业框架做等价复刻。
+
+> 接入 AI（[sensenova-gateway](https://github.com/Babymrbbbb/sensenova-gateway)）→ 用好 AI（[prompt-craft](https://github.com/Babymrbbbb/prompt-craft)）→ LLM×RAG 知识库（[llm-wiki](https://github.com/Babymrbbbb/llm-wiki)）→ 组织 AI 落地（[ai-native-team](https://github.com/Babymrbbbb/ai-native-team)）→ 交付业务结果（驾驶舱 / 运维工作台）
+
+相关项目：旗舰 [ai-native-team](https://github.com/Babymrbbbb/ai-native-team) · 模型层 [sensenova-gateway](https://github.com/Babymrbbbb/sensenova-gateway) · 方法层 [prompt-craft](https://github.com/Babymrbbbb/prompt-craft) · 知识层 [llm-wiki](https://github.com/Babymrbbbb/llm-wiki) / [kb-cli](https://github.com/Babymrbbbb/kb-cli) · 交付层 [swan-electron-suite](https://github.com/Babymrbbbb/swan-electron-suite)
+
 ## License
 
 MIT
