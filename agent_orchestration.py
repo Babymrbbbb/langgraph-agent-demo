@@ -70,7 +70,7 @@ def retrieve(state: State) -> dict:
     真实实现：Chroma.as_retriever().invoke(state['question'])。这里用 mock 命中规则演示。"""
     q = state["question"]
     # mock：问题含「会员」视为知识库有资料，否则空（触发追问分支）
-    docs = ("资料：会员码出示率提升三招——① 收银话术 ② 权益前置 ③ 数据看板。"
+    docs = ("资料：会员运营提升三招——① 收银话术 ② 权益前置 ③ 数据看板。"
             if "会员" in q else "")
     return {"retrieved": docs, "trace": ["1.retrieve 检索"]}
 
@@ -167,6 +167,6 @@ if __name__ == "__main__":
 
     app = build_graph()
     # 场景1：命中 + 需工具（走 retrieve→judge→reason→call_tool→memorize）
-    run_one(app, "会员码出示率怎么提升？给我一份门店动作清单")
+    run_one(app, "会员运营怎么提升？给我一份门店动作清单")
     # 场景2：未命中（走 retrieve→judge→clarify，不偏离、不乱答）
     run_one(app, "宇宙飞船烤炉怎么配？")
